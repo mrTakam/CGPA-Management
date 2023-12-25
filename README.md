@@ -8,17 +8,5 @@ très deçus de la bibliothèque "xlsxio", les opérations possibles sont trop l
 
 
 format final attendu.
-+------------+-------------+-----------+-----------+-----------+-----------+
-| Student ID | Student Name| Semester 1| Semester 1| Semester 2| Semester 2|
-+------------+-------------+-----------+-----------+-----------+-----------+
-| 001        | Alice       | Course A  | Course B  | Course C  | Course D  |
-|            |             | Grade: A   | Grade: B   | Grade: B   | Grade: A   |
-+------------+-------------+-----------+-----------+-----------+-----------+
-| 002        | Bob         | Course A  | Course B  | Course C  | Course D  |
-|            |             | Grade: B   | Grade: C   | Grade: A   | Grade: A   |
-+------------+-------------+-----------+-----------+-----------+-----------+
-| 003        | Charlie     | Course A  | Course B  | Course C  | Course D  |
-|            |             | Grade: A   | Grade: A   | Grade: A   | Grade: B   |
-+------------+-------------+-----------+-----------+-----------+-----------+
-|            | Overall CGPA| 3.67      | 3.33      | 3.67      | 3.33      |
-+------------+-------------+-----------+-----------+-----------+-----------+
+![image](https://github.com/mrTakam/CGPA-Management/assets/145099528/d37eee56-2325-4d13-8c92-56f1e0297acd)
+
