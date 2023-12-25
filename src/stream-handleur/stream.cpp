@@ -1,7 +1,7 @@
 #include <limits>
 #include "stream.hpp"
 
-int int_streamhdl(string to_display) {
+int int_input(string to_display) {
     int valeurSaisie;
 
 	cout << to_display;
@@ -10,14 +10,14 @@ int int_streamhdl(string to_display) {
 		cerr << "Erreur de saisie." << endl;
 		cin.clear();
 		cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        return int_streamhdl(to_display); // Retourne la valeur mise à jour
+        return int_input(to_display); // Retourne la valeur mise à jour
 	}
     
     return valeurSaisie;
 }
 
 // en c la surcharge de fonctionne pas pour modification du retour uniquement
-string str_streamhdl(string to_display) {
+string str_input(string to_display) {
     string valeurSaisie;
 
 	cout << to_display;
@@ -26,7 +26,7 @@ string str_streamhdl(string to_display) {
 		cerr << "\nErreur de saisie !!" << endl;
 		cin.clear();
 		cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        return str_streamhdl(to_display); // Retourne la valeur mise à jour
+        return str_input(to_display); // Retourne la valeur mise à jour
 	}
     
     return valeurSaisie;

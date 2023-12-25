@@ -1,31 +1,36 @@
-#include <iostream>
-/*#include <xlsxio_read.h>
+#include "..\include\stream-handleur\controller.hpp"
 
 int main() {
-    std::cout << "hello\n";
-    // Open .xlsx file for reading
-    const char* filename = "file-management/semester.xlsx";  // Replace with the actual path to your Excel file
-    xlsxioreader xlsxioread;
+    int option;
 
-    if ((xlsxioread = xlsxioread_open(filename)) == NULL) {
-        std::cerr << "Error opening .xlsx file" << std::endl;
-        return 1;
-    }
+    while (1) {
+        cout << "----- CGPA Management System -----\n" << endl;
+        cout << "Select one option below :" << endl;
+        cout << "      1. Manage Exams" << endl;
+        cout << "      2. Manage Courses" << endl;
+        cout << "      3. View CGPA Report" << endl;
+        cout << "      0. Exit" << endl;
 
-    // List available sheets
-    xlsxioreadersheetlist sheetlist;
-    const char* sheetname;
-    std::cout << "Available sheets:" << std::endl;
+        option = int_input("\nEnter your choice: ");
 
-    if ((sheetlist = xlsxioread_sheetlist_open(xlsxioread)) != NULL) {
-        while ((sheetname = xlsxioread_sheetlist_next(sheetlist)) != NULL) {
-            std::cout << " - " << sheetname << std::endl;
+        switch (option) {
+            case 1: handlExam(); break;
+            case 2: handlCourse(); break;
+            case 3: handlCGPA(); break;   
+            case 0: return 0;
+
+            default:
+                cout << "\n\nInvalid option. Please try again." << endl;
+                break;
         }
-        xlsxioread_sheetlist_close(sheetlist);
+
+        cout << "\n";
+        cout << "\n";
     }
 
-    // Clean up
-    xlsxioread_close(xlsxioread);
     return 0;
 }
-*/
+
+
+
+
